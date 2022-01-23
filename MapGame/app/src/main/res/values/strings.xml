@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tp_Game_AndroidAvanced</string>
+    <string name="bouton_chercher_une_carte">CHERCHER UNE CARTE</string>
+    <string name="nom_du_point">NOM DU POINT :</string>
+    <string name="type_de_point">TYPE DE POINT :</string>
+    <string name="latitude">LATITUDE :</string>
+    <string name="longitude">LONGITUDE :</string>
+    <string name="ajouter_le_point">AJOUTER LE POINT</string>
+    <string name="modifier_le_point">Valider les modifications</string>
+    <string name="access_token">pk.eyJ1IjoibGVvdGhpbm5lcyIsImEiOiJja3Z6ZGd5aHhjemwyMm9zNzF4dDZjdHo1In0.xUYA7QZw7TJYznj5LN6trA</string>
+    <string name="nom_carte">Nom de la carte :</string>
+    <string name="creer_carte">créer la carte</string>
+    <string name="ajouter_une_carte"><u>Ajouter une Carte</u></string>
+    <string name="title">MAP GAME</string>
+    <string name="renomer">Renomer</string>
+</resources>

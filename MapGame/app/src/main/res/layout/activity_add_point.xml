@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisClaire"
+    tools:context=".AddPointActivity"
+    app:flexDirection="column"
+    tools:ignore="MissingClass">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_flexBasisPercent="70%"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tw_nom_point_ajout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="@string/nom_du_point"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="64dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tw_type_point_ajout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="@string/type_de_point"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="128dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tw_latitude_ajout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="@string/latitude"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="177dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tw_longitude_ajout"
+                    android:layout_width="121dp"
+                    android:layout_height="17dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="@string/longitude"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="252dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etAddPointName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_edittext">
+
+                    <Spinner
+                        android:id="@+id/spAddType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:popupBackground="@color/grisInputs"
+                        tools:layout_editor_absoluteX="202dp"
+                        tools:layout_editor_absoluteY="136dp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/etAddLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="142dp"
+                    tools:layout_editor_absoluteY="186dp" />
+
+                <EditText
+                    android:id="@+id/etAddLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="174dp"
+                    tools:layout_editor_absoluteY="252dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <view
+        android:id="@+id/view"
+        class="androidx.constraintlayout.widget.ConstraintLayout"
+        android:layout_width="416dp"
+        android:layout_height="233dp"
+        android:background="@color/grisFonce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_flexBasisPercent="30%">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btAddPoint"
+                android:layout_width="256dp"
+                android:layout_height="106dp"
+                android:backgroundTint="@color/Bleu"
+                android:fontFamily="@font/black_ops_one"
+                android:gravity="center"
+                android:text="@string/ajouter_le_point"
+                android:textSize="20sp"
+                app:cornerRadius="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+    </view>
+
+
+</com.google.android.flexbox.FlexboxLayout>
